@@ -11,13 +11,13 @@ const PriceCard = ({ plan: { planicon, title, text, plantype, plancontent, butto
                     <img src={planicon} alt="planicon/img" className='w-14 h-14 lg:h-12 lg:w-12 object-cover' />
                 </div>
                 <div className='grid items-center'>
-                    <h1 className='text-gray-900 font-semibold text-lg filter drop-shadow-lg lg:text-base md:text-sm'>{title}</h1>
-                    <p className='text-slate-900 font-normal text-sm lg:text-xs'>{text}</p>
+                    <h1 className='text-white font-semibold text-lg filter drop-shadow-lg lg:text-base md:text-sm'>{title}</h1>
+                    <p className='text-slate-400 font-normal text-sm lg:text-xs'>{text}</p>
                 </div>
             </div>
-            <div className='grid items-center'><h1 className='text-gray-900 font-bold text-lg filter drop-shadow-lg lg:text-base md:text-sm'>{plantype}</h1></div>
+            <div className='grid items-center'><h1 className='text-white font-bold text-lg filter drop-shadow-lg lg:text-base md:text-sm'>{plantype}</h1></div>
         </div>
-        <div className='h-[0.1vh] bg-slate-200 my-5'></div>
+        <div className='h-[0.1vh] bg-slate-300 my-5'></div>
         <div className='grid items-center gap-3 px-5'>
             {plancontent?.map((val, i) => (
                 <div key={i} className="flex items-center justify-start gap-5">
@@ -25,7 +25,7 @@ const PriceCard = ({ plan: { planicon, title, text, plantype, plancontent, butto
                         <img src={val.iconbox} alt='iconbox/svg' className='lg:w-5 lg:h-5' />
                     </div>
                     <div className='grid items-center'>
-                        <h1 className='font-normal text-lg text-gray-900 filter drop-shadow-lg lg:text-base hover:text-emerald-500'>{val.text}</h1>
+                        <h1 className='font-normal text-lg text-gray-200 filter drop-shadow-lg lg:text-base hover:text-emerald-300'>{val.text}</h1>
                     </div>
                 </div>
             ))}
