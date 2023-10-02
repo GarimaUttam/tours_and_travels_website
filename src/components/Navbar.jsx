@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import logo from '../images/logo.png';
+import travelia from '../images/travelia.png';
 import menu from '../images/menu.svg';
-import { FiAlignJustify } from "react-icons/fi";
 import PopupMenu from './PopupMenu';
 const Navbar = ({ navlinks }) => {
   const [popupState, setPopupState] = useState(false);
@@ -34,19 +34,20 @@ const Navbar = ({ navlinks }) => {
         nav-default ${navState && 'nav-sticky'}
       `}>
         <nav className='flex items-center justify-between travigo-container'>
-          <NavLink to={`/`} className="flex items-center">
-            <img src={logo} alt='logo/img' className='w-22 h-9 object-fill' />
+          <NavLink to={'/'} className="flex items-center">
+            <img src={logo} alt='logo/img' className='w-22 h-10 object-fill' />
+            <img src={travelia} alt='logo/img' className='w-22 h-8 object-fill' />
           </NavLink>
           <ul className='flex items-center lg:hidden gap-7'>
             {navlinks?.map((val, i) => (
-              <li key={i}><NavLink to={'#'} className="text-lg text-slate-900">{val.link}</NavLink></li>
+              <li key={i}><NavLink to={'#'} className="text-lg text-[#bae6fd]">{val.link}</NavLink></li>
             ))}
           </ul>
           <ul className='flex items-center lg:hidden'>
             <li><button type='button' className='button-emrald px-7 text-base'>Join Us</button></li>
           </ul>
           <ul className='hidden lg:flex items-center'>
-            <li><button type='button' className='flex items-center justify-center transition-all duration-200 active:scale-90 cursor-pointer' onClick={onTriggerPopup}>< FiAlignJustify className='object-cover shadow-sm filter' /></button></li>
+            <li><button type='button' className='flex items-center justify-center transition-all duration-200 active:scale-90 cursor-pointer' onClick={onTriggerPopup}><i class="fa-solid fa-bars bg-blue-400"></i></button></li>
           </ul>
         </nav>
       </header>
