@@ -26,8 +26,8 @@ import facebook from '../images/facebook.png';
 import instagram from '../images/instagram.png';
 import twitter from '../images/twitter.png';
 import youtube from '../images/youtube.png';
-// import youtube from '../images/gmail.png';
-// import youtube from '../images/whatsapp.png';
+import gmail from '../images/gmail.png';
+import whatsapp from '../images/whatsapp.png';
 
 import banner from '../images/banner.jpg';
 
@@ -138,7 +138,7 @@ export const footerAPI = {
       {"link": "Menu"},
     ],
     [
-      {"link": "Why Travigo?"},
+      {"link": "Why Travelia?"},
       {"link": "Partner with Us"},
       {"link": "FAQ"},
       {"link": "Blog"},
@@ -152,6 +152,6 @@ export const footerAPI = {
     ],
   ],
   "sociallinks": [
-    {"icon": facebook},{"icon": instagram},{"icon": twitter},{"icon": youtube},
+    {"icon": facebook},{"icon": instagram},{"icon": twitter},{"icon": youtube},{"icon":whatsapp},{"icon":gmail},
   ]
 };
