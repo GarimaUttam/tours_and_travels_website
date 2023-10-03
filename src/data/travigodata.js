@@ -123,7 +123,7 @@ export const pricingapi = {
 
 export const bannerAPI = {
   "title": "The Greet Outdoors",
-  "text": "Whislist Curated By Travigo.",
+  "text": "Whislist Curated By Travelia.",
   "imgSrc": banner,
   "btnText": "Explore More"
 }
