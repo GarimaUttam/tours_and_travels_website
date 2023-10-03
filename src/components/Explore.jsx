@@ -2,7 +2,7 @@ import React from "react";
 const Explore = ({ title, placesAPI }) => {
   return (
     <>
-      <div className="relative p-12 pb-[89px] md:m-0 bg-gradient-to-b from-[hsl(0,0%,0%)] to-[#657487] text-[#afc7ec]">
+      <div className="relative p-12 pb-[89px] md:m-0 bg-gradient-to-b from-[hsl(0,0%,0%)] to-[#657487] text-[#afc7ec] px-2">
         <div className="travigo-container">
           <div
             className="flex items-center justify-center text-center pb-11 md:pb-7 "
