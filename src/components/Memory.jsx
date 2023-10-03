@@ -4,7 +4,7 @@ const Memory = ({ memory: { title, text, subtitle, img, experience } }) => {
     // console.log(memory)
   return (
    <>
-      <div className='relative md:mb-7 bg-gradient-to-b from-[#657487] to-[rgb(0,0,0)]'>
+      <div className='relative md:mb-0 bg-gradient-to-b from-[#657487] to-[rgb(0,0,0)]'>
         <div className='travigo-container flex items-center justify-between gap-16 xl:gap-9 lg:flex-col-reverse'>
             <div className='flex items-center justify-start lg:justify-center w-full max-w-md'>
                 <img src={img} alt="memory/img" className='w-auto h-[55vh] object-fill rounded-tr-[15rem] rounded-bl-[15rem] pb-5' />
